@@ -6,16 +6,28 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
+    
+    @State private var isImagePickerPresented = false
+    
+    @State private var selectedImage: UIImage? = nil
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing:10) {
+            if let image = selectedImage {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200)
+            }
+            Button("Select Image") {
+                selectedImage = nil
+                isImagePickerPresented = true
+            }
         }
-        .padding()
+        .sheet(isPresented: $isImagePickerPresented) {
+            ImagePickerViewRepresentable(selectedImage: $selectedImage)
+        }
     }
 }
 

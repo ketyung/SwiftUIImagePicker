@@ -14,6 +14,7 @@
 		105A01622B47B8E9006A5307 /* SwiftUIImagePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A01612B47B8E9006A5307 /* SwiftUIImagePickerTests.swift */; };
 		105A016C2B47B8E9006A5307 /* SwiftUIImagePickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A016B2B47B8E9006A5307 /* SwiftUIImagePickerUITests.swift */; };
 		105A016E2B47B8E9006A5307 /* SwiftUIImagePickerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A016D2B47B8E9006A5307 /* SwiftUIImagePickerUITestsLaunchTests.swift */; };
+		105A017B2B47B924006A5307 /* ImagePickerViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A017A2B47B924006A5307 /* ImagePickerViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		105A01672B47B8E9006A5307 /* SwiftUIImagePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIImagePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		105A016B2B47B8E9006A5307 /* SwiftUIImagePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImagePickerUITests.swift; sourceTree = "<group>"; };
 		105A016D2B47B8E9006A5307 /* SwiftUIImagePickerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImagePickerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		105A017A2B47B924006A5307 /* ImagePickerViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				105A01502B47B8E8006A5307 /* SwiftUIImagePickerApp.swift */,
 				105A01522B47B8E8006A5307 /* ContentView.swift */,
+				105A017A2B47B924006A5307 /* ImagePickerViewRepresentable.swift */,
 				105A01542B47B8E9006A5307 /* Assets.xcassets */,
 				105A01562B47B8E9006A5307 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				105A01532B47B8E8006A5307 /* ContentView.swift in Sources */,
+				105A017B2B47B924006A5307 /* ImagePickerViewRepresentable.swift in Sources */,
 				105A01512B47B8E8006A5307 /* SwiftUIImagePickerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
